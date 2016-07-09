@@ -11,4 +11,5 @@ Pod::Spec.new do |spec|
   spec.resources    = "FlashPolls.framework/**/*.{xib,nib,png,jpeg,jpg}"
   spec.requires_arc = true
   spec.platform     = :ios, '8.0'
+  spec.preserve_paths = "FlashPolls.framework/*"
 end
