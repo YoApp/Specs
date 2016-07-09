@@ -1,33 +1,23 @@
 {
   "name": "FlashPollsSDK",
   "version": "1.0.0",
-  "summary": "Real-time polling via push notifications",
-  "description": "Poll your users without the need to unlock their phones.",
-  "homepage": "http://www.flashpolls.com",
   "license": {
-    "type": "Commercial",
-    "text": "Life Before Us, Inc.  All rights reserved."
+    "type": "Commercial"
   },
+  "homepage": "http://www.flashpolls.com",
   "authors": {
     "Life Before Us, Inc": "contact@justyo.co"
   },
+  "summary": "Real-time polling via push notifications.",
   "source": {
     "git": "https://github.com/YoApp/FlashPollsSDK.git"
   },
-  "source_files": [
-    "FlashPolls.framework/Headers/FlashPollsSDK.h"
-  ],
-  "preserve_paths": "FlashPolls.framework/*",
-  "resources": ["FlashPolls.framework/**/*.{xib,nib,png,jpeg,jpg}"],
+  "source_files": "FlashPolls.framework/Headers/FlashPollsSDK.h",
   "frameworks": [
-    "FlashPolls",
     "Foundation",
     "UIKit"
   ],
-  "xcconfig": {
-    "FRAMEWORK_SEARCH_PATHS": "$(PODS_ROOT)/FlashPollsSDK"
-  },
-  "vendored_frameworks": "FlashPolls.framework",
+  "resources": "FlashPolls.framework/**/*.{xib,nib,png,jpeg,jpg}",
   "requires_arc": true,
   "platforms": {
     "ios": "8.0"
